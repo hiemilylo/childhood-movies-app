@@ -1,0 +1,15 @@
+.movieContainer {
+    transition: all 0.15s ease-in;
+}
+
+.movieContainer img {
+    width: 20vw;
+    padding: 15px;
+    padding-top: 25px;
+    background-color: #FFFFFF;
+    transition: all 0.15s ease-in;
+}
+
+.movieContainer img:hover {
+    transform: translate(0px, -10px);
+}
