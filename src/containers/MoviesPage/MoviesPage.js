@@ -23,11 +23,13 @@ class MoviesPage extends Component {
             return (
               <Link
                 key={movie.id}
+                className="photograph"
                 to={`${appRoutes.movies}`}
-                className="movieContainer"
               >
-                <img src={movie.photo} alt={movie.name} />
-                <h5 className="CharName">{movie.name}</h5>
+                <div className="movieContainer">
+                  <h5 className="CharName">{movie.name}</h5>
+                  <img src={movie.photo} alt={movie.name} />
+                </div>
               </Link>
             );
           })}

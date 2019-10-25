@@ -11,7 +11,7 @@ export default [
   {
     id: "howls",
     rank: 1200,
-    name: "K-2SO",
+    name: "Howl's Moving Castle",
     photo: Howl,
     keyline: "I find that argument vague and unconvincing.",
     who: [
@@ -24,7 +24,7 @@ export default [
   {
     id: "kiki",
     rank: 1100,
-    name: "C-3PO",
+    name: "Kiki's Delivery Service",
     photo: Kiki,
     keyline: "We’re doomed.",
     who: [
@@ -51,7 +51,7 @@ export default [
   {
     id: "ponyo",
     rank: 900,
-    name: "Finn",
+    name: "Ponyo",
     photo: Ponyo,
     keyline: "The name's Finn. And I'm in charge.",
     who: [
@@ -64,7 +64,7 @@ export default [
   {
     id: "luke",
     rank: 800,
-    name: "Luke Skywalker",
+    name: "Porco Rosso",
     photo: Porco,
     keyline: "I care!",
     who: [
@@ -78,7 +78,7 @@ export default [
   {
     id: "r2d2",
     rank: 700,
-    name: "R2-D2",
+    name: "Princess Mononoke",
     photo: Mononoke,
     keyline: "Concerned uh-oh type beep, as if to say, ‘here we go again’.",
     who: [
@@ -91,7 +91,7 @@ export default [
   {
     id: "yoda",
     rank: 600,
-    name: "Yoda",
+    name: "Totoro",
     photo: Totoro,
     keyline: "Do, or do not. There is no try.",
     who: [
