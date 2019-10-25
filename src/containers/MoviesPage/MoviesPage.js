@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import appRoutes from "../../shared/appRoutes";
+// import appRoutes from "../../shared/appRoutes";
 import { sortBy } from "lodash";
 import MovieList from "./movieList.js";
 
@@ -24,7 +24,7 @@ class MoviesPage extends Component {
               <Link
                 key={movie.id}
                 className="photograph"
-                to={`${appRoutes.movies}`}
+                to={`${movie.id}`}
               >
                 <div className="movieContainer">
                   <h5 className="CharName">{movie.name}</h5>
