@@ -3,35 +3,36 @@ import Howl from "../../assets/imgs/howls.jpg";
 import Kiki from "../../assets/imgs/kiki.jpg";
 import Laputa from "../../assets/imgs/laputa.jpg";
 import Ponyo from "../../assets/imgs/ponyo.jpg";
-import Porco from "../../assets/imgs/porco.jpg";
+import SpiritedAway from "../../assets/imgs/spirited_away.jpg";
 import Mononoke from "../../assets/imgs/princess_mononoke.jpg";
 import Totoro from "../../assets/imgs/totoro.jpg";
 
 export default [
   {
-    id: "howls",
-    rank: 1200,
-    name: "Howl's Moving Castle",
-    photo: Howl,
-    keyline: "I find that argument vague and unconvincing.",
+    id: "yoda",
+    rank: 600,
+    name: "Totoro",
+    photo: Totoro,
+    keyline: "Do, or do not. There is no try.",
     who: [
-      "The lanky, cranky ex-Imperial security droid who helps the Rebels break into the Imperial compound in ‘Rogue One’. Think C-3PO with a bad attitude and verbal diarrhoea (though with the same clipped British accent)."
+      "The diminutive backwards-talking mystical muppet whose knowledge of the Force is second to none. In the original trilogy he’s a marvel of creature design: tactile, sympathetic and loveable. His CGI incarnation in ‘The Phantom Menace’ looks like a rubber troll sprung unnervingly to life, though this does improve somewhat over the next two movies."
     ],
     why: [
-      "Because he’s the first Star Wars sidekick who’s genuinely funny – K-2’s way with a dry, often unintentional putdown is sardonically hilarious. The design is great, too – he’s all hulking and ungainly, like an overgrown metal teenager."
+      "The diminutive backwards-talking mystical muppet whose knowledge of the Force is second to none. In the original trilogy he’s a marvel of creature design: tactile, sympathetic and loveable. His CGI incarnation in ‘The Phantom Menace’ looks like a rubber troll sprung unnervingly to life, though this does improve somewhat over the next two movies.",
+      "Everything about him is iconic: that idiosyncratic manner of speech (part ageing Jewish comedian, part inscrutable samurai warrior), that unique raspy voice (supplied by Frank Oz, so the similarity to Miss Piggy is understandable), the amazing puppet work, even the really-not-so-terrible CGI in the last two prequels (the way he bounces off the walls during the lightsaber battle is amazing)."
     ]
   },
   {
-    id: "kiki",
-    rank: 1100,
-    name: "Kiki's Delivery Service",
-    photo: Kiki,
-    keyline: "We’re doomed.",
+    id: "r2d2",
+    rank: 700,
+    name: "Princess Mononoke",
+    photo: Mononoke,
+    keyline: "Concerned uh-oh type beep, as if to say, ‘here we go again’.",
     who: [
-      "A gleaming golden God to some, a deeply annoying buzz-kill to others, protocol droid Threepio is fluent in over 6,000,000 forms of communication, and boy does he love to go on about it."
+      "A cheeky, level-headed dustbin on legs who comes complete with an Inspector Gadget-like array of convenient little nozzles and appendages. Think Henry the Hoover meets a Swiss army knife, only with personality."
     ],
     why: [
-      "If Threepio had restricted himself to the original ‘Star Wars’ trilogy he’d be higher on this list: his appearances in those movies, whether it’s berating R2-D2 for his obstinacy, tapping Han Solo on the shoulder mid-snog or awkwardly buddying up to Jabba the Hutt, are consistently charming and funny. But the prequel trilogy tended to use him as an automatic gag generator, punctuating the action with inappropriate asides (‘this is such a drag!’). Also, how did a slave boy on a remote desert world manage to build a droid that knows 6,000,000 languages? Anyway, let’s hope the new movies restore our cybernetic hero to his former glory."
+      "Because he’s the real hero of the ‘Star Wars’ movies, consistently getting the others out of trouble just when things look their bleakest. From juggling turbolifts on an enemy battleship to save Anakin Skywalker’s miserable life to fixing Luke’s X-Wing stabilisers during the first Death Star run, from mending the hyperdrive on the Millennium Falcon to cutting his way out of an Ewok trap, Artoo does all the hard galaxy-saving work and gets precious little credit. It’s no surprise he was the first cast member to be confirmed for the third ‘Star Wars’ trilogy: without him the Imperial forces would be ruling the galaxy and Luke, Leia, Han and Chewie would be little more than glutinous splodges on the inside wall of a trash compactor. We’re a little concerned by his behaviour in ‘The Force Awakens’ though – did he really have to leave it so long to tell everyone that he knew where Luke was? Or was he just being dramatic?"
     ]
   },
   {
@@ -49,6 +50,20 @@ export default [
     ]
   },
   {
+    id: "luke",
+    rank: 800,
+    name: "Spirited Away",
+    photo: SpiritedAway,
+    keyline: "I care!",
+    who: [
+      "The hero, of course! Luke is the clean-livin’, hard-workin’, elders-respectin’, sister-kissin’, all-American boy from Tatooine whose adventures form the backbone of the original ‘Star Wars’ trilogy. Just a simple kid from a broken home, Luke pulls himself up by his own utility belt and goes on to master the Force and save the entire galaxy from evil (at least temporarily). Yes, his return in ‘The Last Jedi’ was rather more downbeat, but he did manage to rally his strength and face evil one last time…"
+    ],
+    why: [
+      "C’mon! He’s the ultimate family-friendly adventure hero: kind to animals and droids, good at fighting, flying spaceships, swinging across chasms on ropes and doing the right thing. Mark Hamill’s performance in the original trilogy is consistently intelligent, heartfelt and witty; and Luke never comes close to crossing that line between upstanding hero and annoying goody-goody.",
+      "His return in the sequel trilogy proved wildly controversial, as the Force’s erstwhile champion flat-out refused to throw himself back into the fight. But whether or not you bitterly disagree with writer-director Rian Johnson’s choices here (and frankly, we’re still torn), there’s no arguing with the sheer dramatic heft that Hamill brought to the character, grey and grizzled and alone, torn between friendship and honour and fear of his own terrible power."
+    ]
+  },
+  {
     id: "ponyo",
     rank: 900,
     name: "Ponyo",
@@ -62,44 +77,29 @@ export default [
     ]
   },
   {
-    id: "luke",
-    rank: 800,
-    name: "Porco Rosso",
-    photo: Porco,
-    keyline: "I care!",
+    id: "kiki",
+    rank: 1100,
+    name: "Kiki's Delivery Service",
+    photo: Kiki,
+    keyline: "We’re doomed.",
     who: [
-      "The hero, of course! Luke is the clean-livin’, hard-workin’, elders-respectin’, sister-kissin’, all-American boy from Tatooine whose adventures form the backbone of the original ‘Star Wars’ trilogy. Just a simple kid from a broken home, Luke pulls himself up by his own utility belt and goes on to master the Force and save the entire galaxy from evil (at least temporarily). Yes, his return in ‘The Last Jedi’ was rather more downbeat, but he did manage to rally his strength and face evil one last time…"
+      "A gleaming golden God to some, a deeply annoying buzz-kill to others, protocol droid Threepio is fluent in over 6,000,000 forms of communication, and boy does he love to go on about it."
     ],
     why: [
-      "C’mon! He’s the ultimate family-friendly adventure hero: kind to animals and droids, good at fighting, flying spaceships, swinging across chasms on ropes and doing the right thing. Mark Hamill’s performance in the original trilogy is consistently intelligent, heartfelt and witty; and Luke never comes close to crossing that line between upstanding hero and annoying goody-goody.",
-      "His return in the sequel trilogy proved wildly controversial, as the Force’s erstwhile champion flat-out refused to throw himself back into the fight. But whether or not you bitterly disagree with writer-director Rian Johnson’s choices here (and frankly, we’re still torn), there’s no arguing with the sheer dramatic heft that Hamill brought to the character, grey and grizzled and alone, torn between friendship and honour and fear of his own terrible power."
+      "If Threepio had restricted himself to the original ‘Star Wars’ trilogy he’d be higher on this list: his appearances in those movies, whether it’s berating R2-D2 for his obstinacy, tapping Han Solo on the shoulder mid-snog or awkwardly buddying up to Jabba the Hutt, are consistently charming and funny. But the prequel trilogy tended to use him as an automatic gag generator, punctuating the action with inappropriate asides (‘this is such a drag!’). Also, how did a slave boy on a remote desert world manage to build a droid that knows 6,000,000 languages? Anyway, let’s hope the new movies restore our cybernetic hero to his former glory."
     ]
   },
   {
-    id: "r2d2",
-    rank: 700,
-    name: "Princess Mononoke",
-    photo: Mononoke,
-    keyline: "Concerned uh-oh type beep, as if to say, ‘here we go again’.",
+    id: "howls",
+    rank: 1200,
+    name: "Howl's Moving Castle",
+    photo: Howl,
+    keyline: "I find that argument vague and unconvincing.",
     who: [
-      "A cheeky, level-headed dustbin on legs who comes complete with an Inspector Gadget-like array of convenient little nozzles and appendages. Think Henry the Hoover meets a Swiss army knife, only with personality."
+      "The lanky, cranky ex-Imperial security droid who helps the Rebels break into the Imperial compound in ‘Rogue One’. Think C-3PO with a bad attitude and verbal diarrhoea (though with the same clipped British accent)."
     ],
     why: [
-      "Because he’s the real hero of the ‘Star Wars’ movies, consistently getting the others out of trouble just when things look their bleakest. From juggling turbolifts on an enemy battleship to save Anakin Skywalker’s miserable life to fixing Luke’s X-Wing stabilisers during the first Death Star run, from mending the hyperdrive on the Millennium Falcon to cutting his way out of an Ewok trap, Artoo does all the hard galaxy-saving work and gets precious little credit. It’s no surprise he was the first cast member to be confirmed for the third ‘Star Wars’ trilogy: without him the Imperial forces would be ruling the galaxy and Luke, Leia, Han and Chewie would be little more than glutinous splodges on the inside wall of a trash compactor. We’re a little concerned by his behaviour in ‘The Force Awakens’ though – did he really have to leave it so long to tell everyone that he knew where Luke was? Or was he just being dramatic?"
-    ]
-  },
-  {
-    id: "yoda",
-    rank: 600,
-    name: "Totoro",
-    photo: Totoro,
-    keyline: "Do, or do not. There is no try.",
-    who: [
-      "The diminutive backwards-talking mystical muppet whose knowledge of the Force is second to none. In the original trilogy he’s a marvel of creature design: tactile, sympathetic and loveable. His CGI incarnation in ‘The Phantom Menace’ looks like a rubber troll sprung unnervingly to life, though this does improve somewhat over the next two movies."
-    ],
-    why: [
-      "The diminutive backwards-talking mystical muppet whose knowledge of the Force is second to none. In the original trilogy he’s a marvel of creature design: tactile, sympathetic and loveable. His CGI incarnation in ‘The Phantom Menace’ looks like a rubber troll sprung unnervingly to life, though this does improve somewhat over the next two movies.",
-      "Everything about him is iconic: that idiosyncratic manner of speech (part ageing Jewish comedian, part inscrutable samurai warrior), that unique raspy voice (supplied by Frank Oz, so the similarity to Miss Piggy is understandable), the amazing puppet work, even the really-not-so-terrible CGI in the last two prequels (the way he bounces off the walls during the lightsaber battle is amazing)."
+      "Because he’s the first Star Wars sidekick who’s genuinely funny – K-2’s way with a dry, often unintentional putdown is sardonically hilarious. The design is great, too – he’s all hulking and ungainly, like an overgrown metal teenager."
     ]
   }
 ];

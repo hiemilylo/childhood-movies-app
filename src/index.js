@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 import { BrowserRouter as Router } from "react-router-dom";
 import './index.css';
 import App from './App';
@@ -7,7 +8,9 @@ import * as serviceWorker from './serviceWorker';
 
 const app = (
     <Router>
+      <ScrollToTop>
         <App />
+      </ScrollToTop>
     </Router>
   );
 

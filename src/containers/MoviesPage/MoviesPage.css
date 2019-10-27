@@ -11,12 +11,57 @@
     color: white;
 }
 
+.row {
+    display: flex;
+}
+
+.row-2 {
+    display: flex;
+    transform: translateY(-20%);
+}
+
+.row-3 {
+    display: flex;
+    transform: translateY(-80%);
+}
+
 .photograph {
     text-decoration: none;
+    cursor: default;
+}
+
+.p0 {
+    transform: rotate(4deg);
+}
+
+.p1 {
+    transform: rotate(-6deg);
+}
+
+.p2 {
+    transform: rotate(5deg);
+}
+
+.p3 {
+    transform: rotate(6deg) translate(-40%, -10%);
+}
+
+.p4 {
+    transform: rotate(-4deg) translate(-30%, -10%);
+}
+
+.p5 {
+    transform: rotate(-4deg) translate(-20%, -10%);
+}
+
+.p6 {
+    transform: rotate(4deg) translate(30%, -10%);
 }
 
 .movieContainer {
     transition: all 0.15s ease-in;
+    cursor: pointer;
+    filter: drop-shadow(0 0 0.1rem #C3C3C3);
 }
 
 .movieContainer h5 {
@@ -28,13 +73,17 @@
     font-family: 'Caveat Brush', cursive;
     font-size: 18px;
     font-weight: 100;
-    color: #000000;
+    color: #8F8F8F;
 }
 
 .movieContainer img {
     width: 20vw;
     padding: 15px;
     background-color: #FFFFFF;
+}
+
+.p3 img {
+    width: 15vw;
 }
 
 .movieContainer:hover {
