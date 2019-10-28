@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Caveat+Brush&display=swap');
 
 .container {
-    background-color: #E5E5E5;
+    background-color: #EAEAEA;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -13,21 +13,24 @@
 
 .row {
     display: flex;
+    height: 30vh;
+    transform: translateY(20%);
 }
 
 .row-2 {
     display: flex;
-    transform: translateY(-20%);
+    transform: translateX(-20%);
 }
 
 .row-3 {
     display: flex;
-    transform: translateY(-80%);
+    transform: translateY(-40%);
 }
 
 .photograph {
     text-decoration: none;
     cursor: default;
+    position: relative;
 }
 
 .p0 {
@@ -39,27 +42,27 @@
 }
 
 .p2 {
-    transform: rotate(5deg);
+    transform: rotate(5deg) translateY(20%);
 }
 
 .p3 {
-    transform: rotate(6deg) translate(-40%, -10%);
+    transform: rotate(6deg) translateY(-20%);
 }
 
 .p4 {
-    transform: rotate(-4deg) translate(-30%, -10%);
+    transform: rotate(-4deg) translateY(-5%);
 }
 
 .p5 {
-    transform: rotate(-4deg) translate(-20%, -10%);
+    transform: rotate(-4deg) translateX(-5%);
 }
 
 .p6 {
-    transform: rotate(4deg) translate(30%, -10%);
+    transform: rotate(4deg) translate(15%, -5%);
 }
 
 .movieContainer {
-    transition: all 0.15s ease-in;
+    transition: all 0.1s ease-in;
     cursor: pointer;
     filter: drop-shadow(0 0 0.1rem #C3C3C3);
 }
@@ -77,13 +80,29 @@
 }
 
 .movieContainer img {
-    width: 20vw;
+    width: 15vw;
     padding: 15px;
     background-color: #FFFFFF;
 }
 
+.p2 img {
+    width: 12vw;
+}
+
 .p3 img {
-    width: 15vw;
+    width: 10vw;
+}
+
+.p4 img {
+    width: 18vw;
+}
+
+.p5 img {
+    width: 17vw;
+}
+
+.p6 img {
+    width: 17vw;
 }
 
 .movieContainer:hover {
