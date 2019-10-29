@@ -1,0 +1,20 @@
+.scroll-container {
+    position: absolute;
+    right: 0;
+    display: block;
+    width: 25vw;
+    background-color: #E5E5E5;
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+.scroll-item-container {
+    width: 20vw;
+}
+
+.scroll-item img {
+    width: 10vw;
+    padding: 10%;
+    margin: 15%;
+    background-color: #FFFFFF;
+}

@@ -11,23 +11,29 @@ class MoviesPage extends Component {
   };
 
   hoverHandler = (img) => () => {
-    console.log('hi!' + ' and img: ' + img)
+    console.log('hi! and img: ' + img)
+    this.setState({ bckImg: img })
   }
 
   notHover = () => {
     console.log('left')
+    this.setState({ bckImg: null })
   }
 
   render() {
     let { movies } = this.state;
-    // let imgUrl = this.state.nextImg ? this.state.nextImgSrc : this.state.song.imgSrc;
-    // let divStyle = {
-    //     backgroundImage: 'url(' + imgUrl + ')'
-    // }
+    let divStyle = (this.state.bckImg == null) ?
+      {
+        // backgroundImage: 'url(' + this.state.bckImg + ')'
+        'background-color': '#FFFFFF'
+      } :
+      {
+        // backgroundImage: 'url(' + this.state.bckImg + ')'
+        'background-color': '#000000'
+      }
 
     return (
-      <div className="container" >
-        <br />
+      <div className="container" style={divStyle}>
         <div className="row">
           {movies.map((movie, idx) => {
             if (idx < 3) {

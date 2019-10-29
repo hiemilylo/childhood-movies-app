@@ -1,7 +1,8 @@
 import React from "react";
 import { useParams } from "react-router";
 import MovieList from "../movieList.js";
-// import "./CharacterPage.css";
+import MovieScrollList from "../../MovieScrollList/MovieScrollList"
+import "./MoviePage.css";
 
 const MoviePage = () => {
   const { id } = useParams();
@@ -10,17 +11,20 @@ const MoviePage = () => {
   const { name, photo, keyline, who, why } = movie;
 
   return (
-    <div className="container">
-      <br />
-      <div className="row">
-        <div className="col-lg-4 col-md-6 col-sm-12">
+    <div>
+      <MovieScrollList />
+      <div className="movie-container">
+      <h1 className="MovieName">{name}</h1>
+      <div className="Movie-Header">
+        <div className="movie-img">
           <img style={{ width: "100%" }} src={photo} alt={name} />
         </div>
+        <p className="KeylineContainer">{keyline}</p>
+      </div>
+      <div className="row">
+        <div className="col-lg-4 col-md-6 col-sm-12">
+        </div>
         <div className="col-lg-8 col-md-6 col-sm-12">
-          <h1 className="CharacterName">{name}</h1>
-          <p className="KeylineContainer">{keyline}</p>
-          <br />
-          <br />
 
           <h4>Who?</h4>
           {who.map((p, idx) => {
@@ -31,6 +35,7 @@ const MoviePage = () => {
             return <p key={idx}>{p}</p>;
           })}
         </div>
+      </div>
       </div>
     </div>
   );

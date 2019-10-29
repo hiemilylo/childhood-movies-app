@@ -1,0 +1,21 @@
+.movie-container {
+    width: 80vw;
+    background-color: #FFFFFF;
+    text-align: left;
+    padding: 5vw 10vw;
+    box-sizing: border-box;
+}
+
+.MovieName {
+    font-size: 36px;
+}
+
+.Movie-Header {
+    display: flex;
+    /* justify-content: space-; */
+}
+
+.movie-img {
+    width: 20vw;
+    padding: 15px;
+}
