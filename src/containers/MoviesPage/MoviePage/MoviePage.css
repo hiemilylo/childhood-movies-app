@@ -1,21 +1,43 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
 .movie-container {
-    width: 80vw;
+    width: 75vw;
     background-color: #FFFFFF;
     text-align: left;
-    padding: 5vw 10vw;
+    padding: 2vw 10vw;
     box-sizing: border-box;
 }
 
-.MovieName {
+.location-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 2%;
+}
+
+h1 {
     font-size: 36px;
+    color: #8F8F8F;
+    font-family: 'Muli', sans-serif;
+}
+
+.LocationName {
+    width: 100%;
 }
 
 .Movie-Header {
     display: flex;
-    /* justify-content: space-; */
+    padding: 5%;
+}
+
+.Movie-Header p {
+    margin: 0 5%;
 }
 
 .movie-img {
+    width: auto;
+    box-sizing: border-box;
+}
+
+.movie-img img {
     width: 20vw;
-    padding: 15px;
 }

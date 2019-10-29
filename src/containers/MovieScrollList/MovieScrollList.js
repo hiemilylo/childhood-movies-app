@@ -13,7 +13,6 @@ const MovieScrollList = () => {
         return (
         <Link
             key={movie.id}
-            className="scroll-item-container"
             to={`${movie.id}`}
         >
             <div className="scroll-item">

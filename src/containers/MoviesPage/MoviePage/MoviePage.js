@@ -8,34 +8,26 @@ const MoviePage = () => {
   const { id } = useParams();
 //   const id = props.id;
   const movie = MovieList.filter(movie => movie.id === id)[0];
-  const { name, photo, keyline, who, why } = movie;
+  const { movieName, location, locPhoto, locSummary, photo, summary } = movie;
 
   return (
     <div>
       <MovieScrollList />
       <div className="movie-container">
-      <h1 className="MovieName">{name}</h1>
-      <div className="Movie-Header">
-        <div className="movie-img">
-          <img style={{ width: "100%" }} src={photo} alt={name} />
+        <h1 className="MovieName">{movieName}</h1>
+        <div className="Movie-Header">
+          <div className="movie-img">
+            <img src={photo} alt={movieName} />
+          </div>
+          <p className="movie-sypnopsis">{summary}</p>
         </div>
-        <p className="KeylineContainer">{keyline}</p>
-      </div>
-      <div className="row">
-        <div className="col-lg-4 col-md-6 col-sm-12">
+        <div className="location-container">
+          <h1 className="LocationName">{location}</h1>
+          <div className="movie-img">
+            <img src={locPhoto} alt={movieName} />
+          </div>
+          <p>{locSummary}</p>
         </div>
-        <div className="col-lg-8 col-md-6 col-sm-12">
-
-          <h4>Who?</h4>
-          {who.map((p, idx) => {
-            return <p key={idx}>{p}</p>;
-          })}
-          <h4>Why?</h4>
-          {why.map((p, idx) => {
-            return <p key={idx}>{p}</p>;
-          })}
-        </div>
-      </div>
       </div>
     </div>
   );

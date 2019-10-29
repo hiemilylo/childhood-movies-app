@@ -9,12 +9,17 @@
 }
 
 .scroll-item-container {
-    width: 20vw;
+    /* width: 20vw; */
+    /* margin: 15%; */
+}
+
+.scroll-item {
+    width: 10vw;
+    padding: 10%;
+    margin: 10% 0 0 10%;
+    background-color: #FFFFFF;
 }
 
 .scroll-item img {
     width: 10vw;
-    padding: 10%;
-    margin: 15%;
-    background-color: #FFFFFF;
 }

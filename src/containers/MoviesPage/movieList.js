@@ -6,14 +6,24 @@ import Ponyo from "../../assets/imgs/ponyo.jpg";
 import SpiritedAway from "../../assets/imgs/spirited_away.jpg";
 import Mononoke from "../../assets/imgs/princess_mononoke.jpg";
 import Totoro from "../../assets/imgs/totoro.jpg";
+import TotoroLoc from "../../assets/imgs/totoro-loc.JPG"
+import MononokeLoc from "../../assets/imgs/mononoke-loc.JPG"
+import LaputaLoc from "../../assets/imgs/mononoke-loc.JPG"
+import SpiritedAwayLoc from "../../assets/imgs/mononoke-loc.JPG"
+import PonyoLoc from "../../assets/imgs/ponyo-loc.JPG"
+import KikiLoc from "../../assets/imgs/ponyo-loc.JPG"
+import HowlLoc from "../../assets/imgs/ponyo-loc.JPG"
 
 export default [
   {
-    id: "yoda",
-    rank: 600,
+    id: "totoro",
     name: "Totoro",
+    movieName: "My Neighbor Totoro",
+    locPhoto: TotoroLoc,
+    location: "Sayatama Hills, Japan",
     photo: Totoro,
-    keyline: "Do, or do not. There is no try.",
+    summary: "This acclaimed animated tale by director Hayao Miyazaki follows schoolgirl Satsuke and her younger sister, Mei, as they settle into an old country house with their father and wait for their mother to recover from an illness in an area hospital. As the sisters explore their new home, they encounter and befriend playful spirits in their house and the nearby forest, most notably the massive cuddly creature known as Totoro.",
+    locSummary: "The scenery and movie is based on Sayama Hills, which is known to be a woodland paradise floating amid the reservoirs of Tama and Sayama lakes in northwestern Tokyo. It includes four major parks that draw in visitors for activities (watching cherry blossoms, picnics, pottery and other crafts), trees, creatures and views unique in each area.",
     who: [
       "The diminutive backwards-talking mystical muppet whose knowledge of the Force is second to none. In the original trilogy he’s a marvel of creature design: tactile, sympathetic and loveable. His CGI incarnation in ‘The Phantom Menace’ looks like a rubber troll sprung unnervingly to life, though this does improve somewhat over the next two movies."
     ],
@@ -23,11 +33,14 @@ export default [
     ]
   },
   {
-    id: "r2d2",
-    rank: 700,
+    id: "princess-mononoke",
     name: "Princess Mononoke",
+    movieName: "Princess Mononoke",
+    location: "Yakushima Island, Kagoshima, Japan",
     photo: Mononoke,
-    keyline: "Concerned uh-oh type beep, as if to say, ‘here we go again’.",
+    locPhoto: MononokeLoc,
+    locSummary: "Yakushima is a subtropical island covered mainly by an extensive cedar forest which includes some of Japan’s oldest trees with ages that could reach over 1000 years. The island’s 2000 meter high mountains make it a goodhiking spot, but only for the well-prepared hikers for rain showers happen daily. No one wants to get lost right?",
+    summary: "In the 14th century, the harmony that humans, animals and gods have enjoyed begins to crumble. The protagonist, young Ashitaka - infected by an animal attack, seeks a cure from the deer-like god Shishigami. In his travels, he sees humans ravaging the earth, bringing down the wrath of wolf god Moro and his human companion Princess Mononoke. His attempts to broker peace between her and the humans brings only conflict.",
     who: [
       "A cheeky, level-headed dustbin on legs who comes complete with an Inspector Gadget-like array of convenient little nozzles and appendages. Think Henry the Hoover meets a Swiss army knife, only with personality."
     ],
@@ -39,67 +52,54 @@ export default [
     id: "laputa",
     rank: 1000,
     name: "Laputa",
+    movieName: "Castle in the Sky (Laputa)",
     photo: Laputa,
-    keyline:
-      "You will remove these restraints and leave this cell with the door open.",
-    who: [
-      "The mysterious heroine of ‘The Force Awakens’, a young orphan with a hidden past who dreams of escape from her drab, backwater existence – but when she gets the chance, isn’t sure if adventure was such a great idea after all. The mysterious heroine of ‘The Force Awakens’, a young orphan with a hidden past who dreams of escape from her drab, backwater existence – but when she gets the chance, isn’t sure if adventure was such a great idea after all."
-    ],
-    why: [
-      "Because she’s like something out of an old-fashioned British kids adventure novel: plucky, proud and a bit posh, with nerves of steel and a whip-smart mouth. Watching actress Daisy Ridley bound up those stone steps on the planet Ahch-To in the final moments of ‘The Force Awakens’, we couldn’t help but be reminded of the BBC fantasy stories we loved as kids: ‘The Owl Service’ or ‘The Secret Garden’, perhaps, with their feisty stage-school heroines. The way she ‘handles’ John Boyega’s Finn is hilarious, too – we can’t wait to see where that relationship goes."
-    ]
+    locPhoto: LaputaLoc,
+    location: "Paronella Park, Queensland, Australia",
+    locSummary: "Paronella Park is a heritage-listed tourist attraction built by Jose Paronella, a Spanish immigrant, who dreamt of building a castle. After marrying his wife in Spain, they went to Australia and he found the perfect 5-hectare land beside Mena Creek Falls. Together with the castle, he also built tennis courts, water fountains, a movie theater, and a hydro-electricity plant.",
+    summary: "Young orphan Sheeta and her kidnapper, Col. Muska, are flying to a military prison when their plane is attacked by a gang of air pirates led by the matronly Dola. Escaping from a mid-air collision via a magic crystal around her neck, Sheeta meets fellow orphan Pazu and the pair join forces to discover the mystical floating city of Laputa while pursued by both Muska and the pirates, who lust for the city's myriad treasures."
   },
   {
     id: "luke",
     rank: 800,
     name: "Spirited Away",
+    movieName: "Spirited Away",
+    location: "Jiufen, Taiwan",
     photo: SpiritedAway,
-    keyline: "I care!",
-    who: [
-      "The hero, of course! Luke is the clean-livin’, hard-workin’, elders-respectin’, sister-kissin’, all-American boy from Tatooine whose adventures form the backbone of the original ‘Star Wars’ trilogy. Just a simple kid from a broken home, Luke pulls himself up by his own utility belt and goes on to master the Force and save the entire galaxy from evil (at least temporarily). Yes, his return in ‘The Last Jedi’ was rather more downbeat, but he did manage to rally his strength and face evil one last time…"
-    ],
-    why: [
-      "C’mon! He’s the ultimate family-friendly adventure hero: kind to animals and droids, good at fighting, flying spaceships, swinging across chasms on ropes and doing the right thing. Mark Hamill’s performance in the original trilogy is consistently intelligent, heartfelt and witty; and Luke never comes close to crossing that line between upstanding hero and annoying goody-goody.",
-      "His return in the sequel trilogy proved wildly controversial, as the Force’s erstwhile champion flat-out refused to throw himself back into the fight. But whether or not you bitterly disagree with writer-director Rian Johnson’s choices here (and frankly, we’re still torn), there’s no arguing with the sheer dramatic heft that Hamill brought to the character, grey and grizzled and alone, torn between friendship and honour and fear of his own terrible power."
-    ]
+    locPhoto: SpiritedAwayLoc,
+    summary: "In this animated feature by noted Japanese director Hayao Miyazaki, 10-year-old Chihiro (Rumi Hiiragi) and her parents (Takashi Naitô, Yasuko Sawaguchi) stumble upon a seemingly abandoned amusement park. After her mother and father are turned into giant pigs, Chihiro meets the mysterious Haku (Miyu Irino), who explains that the park is a resort for supernatural beings who need a break from their time spent in the earthly realm, and that she must work there to free herself and her parents.",
+    locSummary: "A former gold mining capital and now a tourist shopping destination, Juifen is a village within the hills of north-eastern Taiwan that has an old district with streets all packed up with cafes, restaurants and souvenir shops. You can even enjoy the view of the Pacific Ocean while munching on the district’s famous taro balls, beef noodles, pork rice, fish balls, dumplings and more. To simply put it: Jiufen is a food paradise."
   },
   {
     id: "ponyo",
     rank: 900,
     name: "Ponyo",
+    movieName: "Ponyo",
     photo: Ponyo,
-    keyline: "The name's Finn. And I'm in charge.",
-    who: [
-      "The rootless, nameless First Order stormtrooper and part-time plumbing technician – born FN-2187 – who has a crisis of conscience on manoeuvres on Jakku, rescues Resistance maverick Poe Dameron and sets out to find his way in this big ol’ universe."
-    ],
-    why: [
-      "Because he’s our wide-eyed guide to the eye-frazzling wonders of ‘The Force Awakens’, desperately trying to come across as cool and collected while permanently panicking on the inside. And also because he’s played by Peckham’s own John Boyega, a remarkable young actor who has unexpectedly muscled his way to the top through a combination of nerdy charm and quiet, steely toughness – perfect for the character of a child soldier who smashes his chains and goes rogue. We’re expecting big things from Finn in the next two movies: if he isn’t a Resistance general with his own fleet of starships by the end of episode IX, we’ll be mightily disappointed."
-    ]
+    locPhoto: PonyoLoc,
+    location: "Setonaikai National Park, Japan",
+    summary: "During a forbidden excursion to see the surface world, a goldfish princess encounters a human boy named Sosuke, who gives her the name Ponyo. Ponyo longs to become human, and as her friendship with Sosuke grows, she becomes more humanlike. Ponyo's father brings her back to their ocean kingdom, but so strong is Ponyo's wish to live on the surface that she breaks free, and in the process, spills a collection of magical elixirs that endanger Sosuke's village.",
+    locSummary: "Setonaikai or Seto Inland Sea is Japan’s Mediterranean Sea as it stretches over 400 kilometers inside ten bordering prefectures and includes 3000 islands. Some of these islands are inhabited and made into a destination for beach lovers and art enthusiasts. Setonaikai is one of the first designated national parks in Japan."
   },
   {
     id: "kiki",
-    rank: 1100,
     name: "Kiki's Delivery Service",
+    movieName: "Kiki's Delivery Service",
     photo: Kiki,
-    keyline: "We’re doomed.",
-    who: [
-      "A gleaming golden God to some, a deeply annoying buzz-kill to others, protocol droid Threepio is fluent in over 6,000,000 forms of communication, and boy does he love to go on about it."
-    ],
-    why: [
-      "If Threepio had restricted himself to the original ‘Star Wars’ trilogy he’d be higher on this list: his appearances in those movies, whether it’s berating R2-D2 for his obstinacy, tapping Han Solo on the shoulder mid-snog or awkwardly buddying up to Jabba the Hutt, are consistently charming and funny. But the prequel trilogy tended to use him as an automatic gag generator, punctuating the action with inappropriate asides (‘this is such a drag!’). Also, how did a slave boy on a remote desert world manage to build a droid that knows 6,000,000 languages? Anyway, let’s hope the new movies restore our cybernetic hero to his former glory."
-    ]
+    location: "Stockholm, Sweden",
+    locPhoto: KikiLoc,
+    summary: "In this anime feature, 13-year-old Kiki moves to a seaside town with her talking cat, Jiji, to spend a year alone, in accordance with her village's tradition for witches in training. After learning to control her broomstick, Kiki sets up a flying courier service and soon becomes a fixture in the community. But when the insecure young witch begins questioning herself and loses her magic abilities, she must overcome her self-doubt to get her powers back.",
+    locSummary: "A preserved medieval city, Gamla Stan (Old Town) is one of Stockholm’s best attractions filled up with narrow cobblestone streets and buildings colored in different shades of gold. You’d pretty much find other magical places in here from one of the largest palaces in the world to the narrowest street in town. Besides the old town, you can even check out Stockholm’s metro art gallery."
   },
   {
     id: "howls",
     rank: 1200,
     name: "Howl's Moving Castle",
+    movieName: "Howl's Moving Castle",
     photo: Howl,
-    keyline: "I find that argument vague and unconvincing.",
-    who: [
-      "The lanky, cranky ex-Imperial security droid who helps the Rebels break into the Imperial compound in ‘Rogue One’. Think C-3PO with a bad attitude and verbal diarrhoea (though with the same clipped British accent)."
-    ],
-    why: [
-      "Because he’s the first Star Wars sidekick who’s genuinely funny – K-2’s way with a dry, often unintentional putdown is sardonically hilarious. The design is great, too – he’s all hulking and ungainly, like an overgrown metal teenager."
-    ]
+    locPhoto: HowlLoc,
+    location: "Colmar, France",
+    summary: "Sophie has an uneventful life at her late father's hat shop, but all that changes when she befriends wizard Howl, who lives in a magical flying castle. However, the evil Witch of Waste takes issue with their budding relationship and casts a spell on young Sophie, which ages her prematurely. Now Howl must use all his magical talents to battle the jealous hag and return Sophie to her former youth and beauty.",
+    locSummary: "Colmar is already known for its colorful, well-lit German slash French architecture and cobblestone streets that have awed a lot of tourists, making them feel that they all suddenly got warped into a storybook. No wonder it’s known as the world’s most beautiful town."
   }
 ];
