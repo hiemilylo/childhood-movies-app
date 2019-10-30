@@ -22,7 +22,7 @@ class MoviesPage extends Component {
     let { movies } = this.state;
     let opaque = (idx) => (this.state.bckImg === idx) ?
       {
-        opacity: 1
+        opacity: 0.8
       } :
       {
         opacity: 0
@@ -33,8 +33,9 @@ class MoviesPage extends Component {
         {movies.map((movie, idx) => {
           return (
             <img
+                 key={idx}
                  style={opaque(idx)}
-                 className={"background-image b" + idx}
+                 className={"background-image"}
                  src={movie.back}
                  alt={movie.movieName + " scenery"}
                  />
