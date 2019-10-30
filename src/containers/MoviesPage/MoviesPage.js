@@ -10,30 +10,36 @@ class MoviesPage extends Component {
     movies: MovieList
   };
 
-  hoverHandler = (img) => () => {
-    console.log('hi! and img: ' + img)
-    this.setState({ bckImg: img })
+  hoverHandler = (idx) => () => {
+    this.setState({ bckImg: idx })
   }
 
   notHover = () => {
-    console.log('left')
     this.setState({ bckImg: null })
   }
 
   render() {
     let { movies } = this.state;
-    let divStyle = (this.state.bckImg == null) ?
+    let opaque = (idx) => (this.state.bckImg === idx) ?
       {
-        // backgroundImage: 'url(' + this.state.bckImg + ')'
-        'background-color': '#FFFFFF'
+        opacity: 1
       } :
       {
-        // backgroundImage: 'url(' + this.state.bckImg + ')'
-        'background-color': '#000000'
+        opacity: 0
       }
 
     return (
-      <div className="container" style={divStyle}>
+      <div className="container">
+        {movies.map((movie, idx) => {
+          return (
+            <img
+                 style={opaque(idx)}
+                 className={"background-image b" + idx}
+                 src={movie.back}
+                 alt={movie.movieName + " scenery"}
+                 />
+          );
+        })}
         <div className="row">
           {movies.map((movie, idx) => {
             if (idx < 3) {
@@ -44,7 +50,7 @@ class MoviesPage extends Component {
                   to={`${movie.id}`}
                 >
                   <div className="movieContainer"
-                       onMouseEnter={this.hoverHandler(movie.id)}
+                       onMouseEnter={this.hoverHandler(idx)}
                        onMouseLeave={this.notHover}>
                     <h5 className="CharName">{movie.name}</h5>
                     <img src={movie.photo} alt={movie.name} />
@@ -64,7 +70,9 @@ class MoviesPage extends Component {
                   className={"photograph p" + idx}
                   to={`${movie.id}`}
                 >
-                  <div className="movieContainer">
+                  <div className="movieContainer"
+                       onMouseEnter={this.hoverHandler(idx)}
+                       onMouseLeave={this.notHover}>
                     <h5 className="CharName">{movie.name}</h5>
                     <img src={movie.photo} alt={movie.name} />
                   </div>
@@ -83,7 +91,9 @@ class MoviesPage extends Component {
                   className={"photograph p" + idx}
                   to={`${movie.id}`}
                 >
-                  <div className="movieContainer">
+                  <div className="movieContainer"
+                       onMouseEnter={this.hoverHandler(idx)}
+                       onMouseLeave={this.notHover}>
                     <h5 className="CharName">{movie.name}</h5>
                     <img src={movie.photo} alt={movie.name} />
                   </div>

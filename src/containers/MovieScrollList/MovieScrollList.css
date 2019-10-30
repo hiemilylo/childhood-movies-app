@@ -8,16 +8,39 @@
     overflow-y: scroll;
 }
 
-.scroll-item-container {
-    /* width: 20vw; */
-    /* margin: 15%; */
-}
-
 .scroll-item {
     width: 10vw;
-    padding: 10%;
+    padding: 4% 7%;
     margin: 10% 0 0 10%;
     background-color: #FFFFFF;
+    transition: all 0.5s ease-in-out;
+}
+
+.scroll-item-container {
+    text-decoration: none;
+    text-align: left;
+}
+
+.scroll-item:hover {
+    filter: drop-shadow(0 0 0.5rem #AAAAAA);
+}
+
+.home-link {
+    font-family: 'Caveat Brush', cursive;
+    font-size: 1em;
+    font-weight: 100;
+    color: #8F8F8F;
+    margin: 5% 0;
+    padding: 4% 7%;
+}
+
+.scroll-name {
+    font-family: 'Caveat Brush', cursive;
+    font-size: 1em;
+    font-weight: 100;
+    color: #8F8F8F;
+    margin: 5% 0;
+    padding: 0;
 }
 
 .scroll-item img {
